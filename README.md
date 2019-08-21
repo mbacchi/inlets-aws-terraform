@@ -36,9 +36,13 @@ These steps include:
 * Installing terraform
 * Cloning this repository
 * Running `terraform init` in the cloned directory
-* Exporting environment variable for your AWS_PROFILE and AWS_REGION. This looks something like:
+* Exporting environment variable for your AWS_PROFILE and AWS_REGION. This looks
+  something like:
 
     `export AWS_PROFILE=blah && export AWS_REGION=us-east-2`
+
+**Note**: You will need to change the `key_name` on line 64 of `main.tf` to the
+name of your own keypair.
 
 ### Create the terraform plan
 
