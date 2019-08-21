@@ -41,8 +41,9 @@ These steps include:
 
     `export AWS_PROFILE=blah && export AWS_REGION=us-east-2`
 
-**Note**: You will need to change the `key_name` on line 64 of `main.tf` to the
-name of your own keypair.
+**Note**: You will need to change the `key_name` on [line
+64](https://github.com/mbacchi/inlets-aws-ec2-terraform/blob/master/main.tf#L64)
+of `main.tf` to the name of your own keypair.
 
 ### Create the terraform plan
 
