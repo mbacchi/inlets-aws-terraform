@@ -10,6 +10,19 @@ this is if you intend to also run a webserver on your Lightsail instance, in
 which case both Inlets and your webserver would be attempting to use port 80,
 and the one that started up last would probably fail.
 
+## What is Inlets?
+
+Inlets is a fairly new project that allows you to setup reverse proxy, websocket
+tunnels, or other endpoints to the public internet, it is similar to
+[ngrok](https://ngrok.com/). The [video overview from Alex
+Ellis](https://youtu.be/jrAqqe8N3q4) shows how simple it makes setting up the
+environment.
+
+In the [Inlets repository](https://github.com/alexellis/inlets/tree/master/hack)
+there are 'hacks' to setup Inlets nodes using DigitalOcean and other cloud
+platforms. This is intended to provision an Inlets node on AWS Lightsail for you
+quickly.
+
 ### Prerequisites
 
 * Terraform
@@ -22,7 +35,7 @@ To create your own AWS keypair, execute the command:
 ssh-keygen -t rsa -b 4096 -N '' -f lightsail_keypair
 ```
 
-You will then import the keypair wit Terraform.
+You will then import the keypair with Terraform.
 
 ### Prepare to run terraform
 
